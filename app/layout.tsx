@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 
 import { Toaster } from "react-hot-toast";
 import Header from "@/components/Header";
+import FloatingReportButton from "@/components/reportes/FloatingReportButton";
 
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <Header />
         {children}
+         <FloatingReportButton />
         <Toaster />
 
 
